@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+
+/* viewplaylist.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: yellow;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: silver;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: silver;
+  
+}
+
+tbody tr:hover {
+  background-color: grey;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  margin-top: 10px
+}
+
+audio {
+  width: 50%;
+  
+}
+
+

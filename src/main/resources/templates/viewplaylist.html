@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" th:href="@{/css/viewplaylist.css}">
+<title>View all playlist</title>
+</head>
+<body>
+<table border=1>
+   <thead>
+    <tr>
+     <th>Name</th>
+     <th>Songs</th>
+    </tr>
+   </thead>
+   
+   <tbody>
+    <tr th:each="playlist:${playlists}">
+      <td th:text="${playlist.name}"></td>
+      <td>
+      <ul>
+       <li th:each="song:${playlist.songs}" >
+       <span th:text="${song.name}"></span>
+       <audio controls="controls">
+        <source th:src="${song.link}" type="audio/ogg">
+       </audio>
+       </li>
+      </ul>
+      </td>
+    </tr>
+   </tbody>
+ </table>
+</body>
+</html>

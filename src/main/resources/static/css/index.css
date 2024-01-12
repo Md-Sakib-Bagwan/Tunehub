@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+/* Style the body to set a background color and center the content */
+body {
+  background-color:yellow; /* Set your desired background color */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Set your desired font */
+  text-align: center;
+}
+
+/* Style the links to make them visually appealing */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: #fff; /* Set your desired text color */
+  background-color: #3498db; /* Set your desired background color */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style the links on hover for a better user experience */
+a:hover {
+  background-color: #2980b9; /* Set a slightly different background color on hover */
+}
+
